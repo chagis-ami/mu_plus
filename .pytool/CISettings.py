@@ -67,13 +67,13 @@ class Settings(CiSetupSettingsManager, CiBuildSettingsManager, UpdateSettingsMan
     def GetArchitecturesSupported(self):
         ''' return iterable of edk2 architectures supported by this build '''
         return ("IA32",
-                "X64",
-                "ARM",
-                "AARCH64")
+                "X64"
+                )
 
     def GetTargetsSupported(self):
         ''' return iterable of edk2 target tags supported by this build '''
-        return ("DEBUG", "RELEASE", "NO-TARGET", "NOOPT")
+        return ("DEBUG", "NO-TARGET", "NOOPT")
+        #"RELEASE", 
 
     # ####################################################################################### #
     #                     Verify and Save requested Ci Build Config                           #

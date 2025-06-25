@@ -18,7 +18,7 @@
 [LibraryClasses]
   ##  @libraryclass  Library to abstract platform differences in SMM protections
   ##
-  PlatformSmmProtectionsTestLib|Include/Library/PlatformSmmProtectionsTestLib.h
+  #PlatformSmmProtectionsTestLib|Include/Library/PlatformSmmProtectionsTestLib.h
 
   ## @libraryclass Provides a way to parse the page/translation table
   ##               entries into a flat map.

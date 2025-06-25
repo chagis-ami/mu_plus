@@ -55,7 +55,9 @@ results will be saved to an XML file in the same file system as the app (or the 
 available writable simple file system):
 
 - **NoReadWriteExecute:** Checks if the page/translation table has any readable, writable,
-and executable regions.
+and executable regions.  
+- **UnallocatedMemoryIsRP:** Checks that all EfiConventionalMemory is EFI_MEMORY_RP or
+is not mapped.  
 - **IsMemoryAttributeProtocolPresent:** Checks if the EFI Memory Attribute Protocol
 is installed.  
 - **NullPageIsRp:** Checks if page 0 is EFI_MEMORY_RP or is not mapped.  
