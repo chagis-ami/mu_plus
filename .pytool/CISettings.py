@@ -67,12 +67,13 @@ class Settings(CiSetupSettingsManager, CiBuildSettingsManager, UpdateSettingsMan
     def GetArchitecturesSupported(self):
         ''' return iterable of edk2 architectures supported by this build '''
         return ("IA32",
-                "X64"
-                )
+                "X64",
+                "ARM",
+                "AARCH64")
 
     def GetTargetsSupported(self):
         ''' return iterable of edk2 target tags supported by this build '''
-        return ("DEBUG","RELEASE","NO-TARGET", "NOOPT")
+        return ("DEBUG", "RELEASE", "NO-TARGET", "NOOPT")
 
     # ####################################################################################### #
     #                     Verify and Save requested Ci Build Config                           #
@@ -193,22 +194,22 @@ class Settings(CiSetupSettingsManager, CiBuildSettingsManager, UpdateSettingsMan
             {
                 "Path": "MU_BASECORE",
                 "Url": "https://github.com/microsoft/mu_basecore.git",
-                "Branch": "dev/202502"
+                "Branch": "v2025020000.0.0"
             },
             {
                 "Path": "Silicon/Arm/MU_TIANO",
                 "Url": "https://github.com/Microsoft/mu_silicon_arm_tiano.git",
-                "Branch": "dev/202502"
+                "Branch": "v2025020000.0.0"
             },
             {
                 "Path": "Silicon/Intel/MU_TIANO",
                 "Url": "https://github.com/Microsoft/mu_silicon_intel_tiano.git",
-                "Branch": "dev/202502"
+                "Branch": "v2025020000.0.0"
             },
             {
                 "Path": "Common/MU_TIANO",
                 "Url": "https://github.com/Microsoft/mu_tiano_plus.git",
-                "Branch": "dev/202502"
+                "Branch": "v2025020000.0.0"
             }
         ]
 

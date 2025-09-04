@@ -146,7 +146,7 @@
   UefiTestingPkg/AuditTests/DMAProtectionAudit/UEFI/DMAVTdProtectionUnitTestApp.inf 
   UefiTestingPkg/AuditTests/PagingAudit/UEFI/DxePagingAuditTestApp.inf 
   UefiTestingPkg/AuditTests/DMAProtectionAudit/UEFI/DMAIVRSProtectionUnitTestApp.inf
-  UefiTestingPkg/AuditTests/TpmDmpLog/TpmIntegrityAuditTestApp.inf
+  UefiTestingPkg/AuditTests/TpmIntegrityAuditTestApp/TpmIntegrityAuditTestApp.inf
   
 #FunctionalSystemTests
   UefiTestingPkg/FunctionalSystemTests/MemmapAndMatTestApp/MemmapAndMatTestApp.inf
