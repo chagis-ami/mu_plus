@@ -39,6 +39,7 @@
   DebugLib
   UefiBootServicesTableLib
   UefiLib
+  CpuExceptionHandlerLib
   CpuLib
   HobLib
   PeCoffGetEntryPointLib
